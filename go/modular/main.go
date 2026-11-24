@@ -1,13 +1,15 @@
-package main
+// Modular employee-pay demonstration (Go 1.22).
 
-import (
-	"fmt"
+package main // Declares this file as the executable main package.
 
-	"example.com/payroll/pay"
-)
+import ( // Begins the grouped import declaration.
+	"fmt" // Imports formatting and console output functions.
 
-func main() {
-	e := pay.NewEmployee("Ana Reyes", 620.00)
-	fmt.Printf("%s gross pay: %.2f\n", e.Name, e.Gross(38, 15.50))
-	// fmt.Println(e.salary) would NOT compile: salary is unexported.
-}
+	"example.com/payroll/pay" // Imports the local payroll package.
+) // Ends the grouped import declaration.
+
+func main() { // Starts the main function.
+	e := pay.NewEmployee("Ana Reyes", 620.00)                      // Creates an employee through the exported constructor.
+	fmt.Printf("%s gross pay: %.2f\n", e.Name, e.Gross(38, 15.50)) // Prints the employee name and calculated gross pay.
+	// fmt.Println(e.salary) would NOT compile: salary is unexported. // Documents that private package fields cannot be accessed here.
+} // Ends the main function.
