@@ -1,0 +1,5 @@
+00101 Ana        Reyes         620.00
+00102 Ben        Cruz          580.50
+00103 Cora       Dela          710.25
+Total payroll:    1910.75
+Salaries above 600.00: 2

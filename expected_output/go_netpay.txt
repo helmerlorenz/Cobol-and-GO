@@ -1,0 +1,3 @@
+Hours 45: net pay 613.80
+Hours 200: rejected (over 168)
+Hours 38: net pay 518.32

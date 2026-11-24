@@ -1,0 +1,14 @@
+      *> Supplement (Unit 6): main program that CALLs GROSSPAY
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. MODMAIN.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 WS-HOURS  PIC 9(3)    VALUE 38.
+       01 WS-RATE   PIC 9(3)V99 VALUE 15.50.
+       01 WS-GROSS  PIC 9(6)V99.
+       01 GROSS-OUT PIC Z(5)9.99.
+       PROCEDURE DIVISION.
+           CALL "GROSSPAY" USING WS-HOURS WS-RATE WS-GROSS
+           MOVE WS-GROSS TO GROSS-OUT
+           DISPLAY "Gross pay: " GROSS-OUT
+           STOP RUN.

@@ -1,0 +1,3 @@
+Gross pay:    736.25
+Ten additions of 0.10: 1.00
+Equals 1.00: TRUE
